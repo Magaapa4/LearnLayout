@@ -1,0 +1,547 @@
+
+/* Настройка стилей */
+html {
+    box-sizing: border-box;
+}
+* ,*:before, *:after {
+    box-sizing: inherit;
+}
+body {
+   font-family: 'Roboto', sans-serif;
+   margin: 0;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 15px;
+   color: #333;
+   line-height: 1.6;
+   background: #fff;
+}
+h1, h2, h3, h4, h5, h6 {
+   margin: 0;
+}
+p {
+    margin: 15px 0;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1180px;
+}
+/* page */ 
+.page {
+    overflow: hidden;
+}
+/* Header */
+.header {
+    width: 100%;
+    position: absolute;
+    padding-top: 20px;
+}
+.header__inner {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}    
+.nav__link {
+    text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);
+    vertical-align: middle;
+    margin-left: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+/* Burger nav */
+.nav__link-burger {
+    cursor: pointer;
+    border: 0;
+    position: relative;
+    display: inline-block;
+    width: 14px;
+    height: 2px;
+    background-color: #fff;
+}
+.nav__link-burger:after, .nav__link-burger:before {
+    content: " ";
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+}
+.nav__link-burger:before  {
+    left: 0;
+    top: -4px;
+}
+.nav__link-burger:after {
+    left: 0;
+    top: 4px;
+}
+/* Intro */
+.intro  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url("../img/intro_bg.jpg") center no-repeat;
+    background-size: cover;
+}
+.intro__inner {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.intro__subtitle {
+    font-family: "Times New Roman", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: italic;
+    color: #fff;
+    opacity: .7;
+} 
+.intro__title {
+    text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+.btn {
+    margin-bottom: 16px;
+    padding: 6px 65px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    border: 3px solid #fff;
+}
+.intro__text {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+.intro__text a {
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: underline;
+}
+/* Get */
+.get__inner {
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.get__item {
+    margin-right: 35px;
+    text-align: center;
+    width: 33.333%;
+}
+.get__item:last-child {
+    margin-right: 0;
+}
+.get__icon {
+    margin: 0 auto 15px;
+    position: relative;
+    border-radius: 50%;
+    width: 108px;
+    height: 108px;
+    border: 2px solid #000;
+    padding: 40px;
+}
+.get__img {
+    display: block;
+    position: absolute;
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.get__title {
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+.get__title:after {
+    margin: 5px auto;
+    display: block;
+    content: " ";
+    width: 88px;
+    height: 1px;
+    background-color: #f57365;
+}
+.get__text {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000;
+}
+/* App */
+.app {
+    font-family: 'Lato', sans-serif;
+    color: #000;
+    background: #f7f7f7;
+}
+.app__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+.app__item {
+    width: 50%;
+}
+.app__iphone {
+    max-width: 100%;
+    display: block;
+}
+.app__item--text {
+    padding-top: 70px;
+}
+.app__title {
+    font-weight: 700;
+    font-size: 18px;
+}
+.app__title:after {
+    margin: 5px 0;
+    display: block;
+    content: " ";
+    width: 88px;
+    height: 1px;
+    background-color: #f57365;
+}
+.app__text {
+    font-size: 16px;
+    font-weight: 300;
+}
+.app__link {
+    text-decoration: none;
+}
+/* Reviews */
+.reviews {
+    background: url(../img/kichen_bg.jpg) center no-repeat;
+    background-size: cover;
+}
+.container--min {
+    margin: 0 auto;
+    max-width: 940px;
+}
+.reviews__item {
+    padding: 80px 0;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+.reviews__text {
+    color: rgba(255, 255, 255, .5);
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+.reviews__name {
+    color: rgba(255, 255, 255, .5);
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.reviews__slider__btn {
+    display: flex;
+    justify-content: center;
+}
+.btn__item {
+    opacity: .2;
+    margin-left: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.btn__item--active {
+    opacity: 1;
+}
+
+/* Cuisines  */
+.cuisines__header {
+    padding: 100px 0 40px;
+}
+.cuisines__title {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #000;
+    font-weight: 700;
+
+}
+.cuisines__title:after {
+    margin: 5px auto;
+    display: block;
+    content: " ";
+    width: 88px;
+    height: 1px;
+    background-color: #f57365;
+}
+/*  */
+.cuisines__recipes {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cuisines__item {
+    position: relative;
+    width: 20%;
+}
+.cuisines__img {
+    width: 100%;
+    display: block;
+}
+.cuisines__info {
+    color: #fff;
+    width: 100%;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+    left: 0;
+    position: absolute;
+    text-align: center;
+}
+.cuisines__text {
+    font-family: "Times New Roman", sans-serif;
+    font-size: 15px;
+    font-style: italic;
+}
+.cuisines__word {
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+/* Numbers */
+.numbers__inner {
+    flex-wrap: wrap;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.numbers__item {
+    width: 20%;
+    text-align: center;
+    /* padding: 50px 0; */
+}
+.numbers__big {
+    color: #000;
+    font-weight: 700;
+    font-size: 36px;
+}
+.number__text {
+    font-size: 16px;
+    font-weight: 300;
+}
+/* Footer */
+.footer {
+    border-top: 1px solid #e2e2e2;
+    background-color: #f7f7f7;
+    color: #8b8b8b;
+}
+.footer__inner {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__copyrigth {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+.footer__design {
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+}
+.footer__design span {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+/* Media */
+@media (max-width: 1024px) {
+    /* header */ 
+    .header__inner {
+        padding: 0 25px;
+    }
+    /* intro */
+    .intro__subtitle {
+        font-size: 30px;
+    }
+    .intro__title {
+        font-size: 80px;
+    }
+    /* get */
+    .get__inner  {
+        padding: 0 20px;
+        margin: 80px 0;
+    }
+    /* app */
+    .app {
+    }
+    .app__item--text {
+        padding: 9px 40px;
+    }
+    /* reviews */
+    .reviews__item {
+        padding: 50px 0;
+    }
+    .reviews__text {
+        padding: 0 20px;
+    }
+    /* Cuisines Header */
+    .cuisines__header {
+        padding: 40px 0 20px;
+    }
+    .cuisines__item {
+        width: 50%;
+    }
+    /* Footer */
+    .footer__inner {
+        padding: 20px;
+    }
+}
+@media (max-width: 767px) {
+    /* nav */
+    .nav__link {
+        font-size: 16px;
+    }
+    /* Get */
+    .get__inner {
+        flex-wrap: wrap;
+    }
+    .get__item {
+        width: 100%;
+    }
+    .get__text {
+        padding: 0 50px;
+    }
+    /* app */
+    .app__inner {
+        justify-content: center;
+    }
+    .app__item {
+        padding-top: 50px;
+    }
+    .app__iphone {
+       align-self: flex-end;
+
+    }
+    /* reviews */
+    .reviews__text {
+        padding: 0 40px;
+    }
+    /* number */
+    .numbers__item {
+        width: 100%;
+    }
+    .numbers__item {
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 425px) {
+    /* header */
+    .header__inner {
+        justify-content: center;
+    }
+    /* nav */
+    .nav {
+        display: none;
+    }
+    .logo {
+        width: 100px;
+    }
+    /* intro */
+    .intro__subtitle {
+        font-size: 30px;
+    }
+    .intro__title {
+        font-size: 70px;
+    }
+    /* get */
+    .get__inner {
+        margin: 40px 0;
+    }
+    .get__item {
+        margin-right: 0;
+    }
+    .cuisines__item {
+        width: 100%;
+    }
+}
+@media (max-width: 425px) {
+    /* intro */
+    .intro__text {
+        text-align: center; 
+    }
+    /* app */
+    .app__inner {
+        align-items: center;
+        padding-top: 0;
+        flex-direction: column-reverse;
+    }
+    .app__item {
+        width: 100%;
+    }
+    .app__iphone {
+        margin: 0 auto;
+        max-width: 70%;
+    }
+    /* reviews */
+    .reviews__text {
+        font-size: 16px;
+    }
+    .reviews__name {
+        font-size: 17px;
+    }
+    /* .footer */
+    .footer__inner {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (min-height: 320px) and (max-height: 360px) {
+    /* intro */
+    .intro {
+        justify-content: flex-end;
+    }
+    .intro__subtitle {
+        font-size: 25px;
+    }
+    .intro__title {
+        font-size: 70px;
+    }
+    .btn {
+        font-size: 14px;
+        border-width:2px;
+    }
+    /* app */
+    .app__inner {
+        padding-top: 50px;
+        flex-direction: column-reverse;
+    }
+    .app__item {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .app__iphone {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+}
